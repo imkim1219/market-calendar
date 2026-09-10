@@ -1,0 +1,25 @@
+{
+  "horizon_days": 120,
+  "output_ics": "~/Claude/market-calendar/public/market.ics",
+  "calendar_name": "Market Calendar",
+
+  "watchlist": [
+    "NVDA", "AAPL", "MSFT", "GOOGL", "AMZN", "META", "TSLA",
+    "AVGO", "AMD", "TSM", "MU", "ASML", "ARM",
+    "NFLX", "COST", "JPM", "LLY", "ORCL", "CRM", "PLTR"
+  ],
+
+  "fred_releases": [
+    { "match": "Consumer Price Index",              "label": "CPI",            "time": "08:30" },
+    { "match": "Producer Price Index",              "label": "PPI",            "time": "08:30" },
+    { "match": "Employment Situation",              "label": "고용보고서",       "time": "08:30" },
+    { "match": "Personal Income and Outlays",       "label": "PCE",            "time": "08:30" },
+    { "match": "Gross Domestic Product",           "label": "GDP",            "time": "08:30" },
+    { "match": "Advance Monthly Sales for Retail",  "label": "소매판매",         "time": "08:30" },
+    { "match": "Job Openings and Labor Turnover",   "label": "JOLTS",          "time": "10:00" },
+    { "match": "Surveys of Consumers",                "label": "미시간대 소비자심리", "time": "10:00" }
+  ],
+
+  "include_fomc": true,
+  "fomc_keywords": ["FOMC Meeting", "FOMC Statement", "Chair Powell", "Press Conference"]
+}
