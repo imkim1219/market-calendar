@@ -20,6 +20,7 @@ from zoneinfo import ZoneInfo
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 CACHE = os.path.join(ROOT, "cache")
+os.makedirs(CACHE, exist_ok=True)  # gitignored, so absent on a fresh checkout
 ET = ZoneInfo("America/New_York")
 UA = "market-calendar/1.0 (personal calendar sync)"
 
