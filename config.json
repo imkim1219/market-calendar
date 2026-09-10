@@ -1,6 +1,6 @@
 {
   "horizon_days": 120,
-  "output_ics": "~/Claude/market-calendar/public/market.ics",
+  "output_ics": "public/market.ics",
   "calendar_name": "Market Calendar",
 
   "watchlist": [

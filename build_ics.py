@@ -237,7 +237,8 @@ def main():
         log("이벤트 0건 -> 기존 파일 유지하고 종료")
         return 1
 
-    out = os.path.expanduser(cfg["output_ics"])
+    # relative paths resolve against the script, so the repo works anywhere
+    out = os.path.join(ROOT, os.path.expanduser(cfg["output_ics"]))
     tmp = out + ".tmp"
     with open(tmp, "w", encoding="utf-8", newline="") as fh:
         fh.write(render_ics(cfg, events))
