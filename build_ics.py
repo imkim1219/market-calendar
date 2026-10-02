@@ -86,7 +86,7 @@ def earnings_events(cfg, start, end):
                 desc.append("출처: Nasdaq earnings calendar")
                 events.append({
                     "uid_seed": f"earn-{sym}-{day:%Y%m%d}",
-                    "summary": f"실적 {sym} ({tag})",
+                    "summary": f"[실적] {sym} ({tag})",
                     "description": "\n".join(d for d in desc if d),
                     "start": when.replace(tzinfo=ET),
                     "all_day": False,
