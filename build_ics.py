@@ -214,6 +214,8 @@ def render_ics(cfg, events):
             lines.append(f"DTEND:{utc + timedelta(minutes=30):%Y%m%dT%H%M%SZ}")
         lines.append(fold(f"SUMMARY:{esc(ev['summary'])}"))
         lines.append(fold(f"DESCRIPTION:{esc(ev['description'])}"))
+        if cfg.get("category"):
+            lines.append(fold(f"CATEGORIES:{esc(cfg['category'])}"))
         lines.append("TRANSP:TRANSPARENT")
         lines.append("END:VEVENT")
     lines.append("END:VCALENDAR")

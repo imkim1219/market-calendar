@@ -2,6 +2,7 @@
   "horizon_days": 120,
   "output_ics": "public/market.ics",
   "calendar_name": "Market Calendar",
+  "category": "미국 경제",
 
   "watchlist": [
     "NVDA", "AAPL", "MSFT", "GOOGL", "AMZN", "META", "TSLA",
